@@ -7,9 +7,9 @@ func main(){
 	fmt.Print("Enter a number >")
 	tmp := 1
 	for tmp == 1 {
-		tmp, _ = fmt.Scanf("%d",&n)
-		switch n {
-			case 1 : fmt.Println("Monday")
+		tmp, _ = fmt.Scanf("%f",&n)
+		switch float32(n) {
+			case 1.6 : fmt.Println("Monday")
 			case 2 : fmt.Println("Tuesday")
 			case 3 : fmt.Println("Wednesday")
 			case 4 : fmt.Println("Thrusday")
