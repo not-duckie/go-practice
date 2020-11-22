@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"strings" )
 
-func printfunc(ref *[3][3]int){
+func printfunc(ref [][]int){
+	ref[0][0] = 0
 	fmt.Println("Printing from func")
 	fmt.Println(ref)
 }
@@ -41,8 +42,8 @@ func main(){
 	for i := 0; i<3; i++{
 		fmt.Println(array[i])
 	}
-	array2 := [3][3]int{[3]int{1,0,0},[3]int{0,1,0},[3]int{0,0,1}}
-	printfunc(&array2)
+	array2 := [][]int{[]int{1,0,0},[]int{0,1,0},[]int{0,0,1}}
+	printfunc(array2)
 
 	fmt.Println(array2)
 }
