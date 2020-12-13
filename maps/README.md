@@ -27,3 +27,8 @@ hashmap := map[string]int{
 	"sex i had": 0,
 		}
 ```
+
+
+## IMPORTANT NOTICE
+
+the order of a hashmap can change after adding a new key to it. So do not rely on it.
