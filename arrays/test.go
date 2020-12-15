@@ -11,6 +11,7 @@ func printfunc(ref [][]int){
 }
 
 func main(){
+	array := []int{1,2,3}
 	array := [3]int {1,2,3}
 	fmt.Println(array," => array")
 
@@ -45,5 +46,5 @@ func main(){
 	array2 := [][]int{[]int{1,0,0},[]int{0,1,0},[]int{0,0,1}}
 	printfunc(array2)
 
-	fmt.Println(array2)
+	fmt.Printf("%T ",array2)
 }
