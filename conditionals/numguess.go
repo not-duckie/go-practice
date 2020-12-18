@@ -18,9 +18,9 @@ func main(){
 		tmp++
 		fmt.Print(">")
 		fmt.Scanf("%d",&n)
-		if (n>num){
+		if n>num {
 			fmt.Println("Your guess is too big")
-		} else if (n<num){ fmt.Println("Your guess it too small")
+		} else if n<num { fmt.Println("Your guess it too small")
 		} else { fmt.Println("You guessed it right !!")
 			 fmt.Println("You guess it in ",tmp," tries")
 			 os.Exit(0)
