@@ -33,3 +33,12 @@ The statment will be excuted in lifo order thus it will be. as defer is normally
 1. end
 2. middle
 3. start
+
+
+# Panic
+
+In go every error is considered as just as an information and no exception is thrown but it job of programmer to read the error the make a call whether to panic or not. This where the panic function comes in. It panics and stops the execution of code. But the defer functions are still executed before stoping the code all togther the control flow works like.
+
+1. defer
+1. recover()
+1. panic
