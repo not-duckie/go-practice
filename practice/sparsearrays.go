@@ -1,22 +1,25 @@
 package main
 
 import "fmt"
-import "regexp"
+import "strings"
 
-func matchingStrings(strings []string, queries []string)(res []int32){
-	for _,i := range queries {
-		//regx := "^ *" + i + " *$"
-		fmt.Println(i)
-		regx := "^ ab $"
-		if a,_ := regexp.MatchString(regx,strings[0]);a{
-			fmt.Println(a)
+
+
+func matchingStrings(str []string, queries []string)(res []int32){
+	for _,i := range queries{
+		var count int32
+		for _,j := range str{
+			j = strings.ReplaceAll(j," ","")
+			if i == j{
+				count++
+			}
 		}
+		res = append(res,count)
 	}
-
-	return []int32{0}
+	return res
 }
 
 func main(){
-	matchingStrings([]string{"ab"," ab","abc"},[]string{"ab","abc","bc"})
+	fmt.Println(matchingStrings([]string{"ab"," ab","abc"},[]string{"ab","abc","bc"}))
 
 }
