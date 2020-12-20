@@ -21,6 +21,11 @@ func test(g *greeter){
 
 }
 
+func (g *greeter)test2(){
+	g.name = "goel"
+
+}
+
 func main(){
 	w := greeter{
 		greeting: "Hello",
@@ -35,4 +40,6 @@ func main(){
 	peter.ryhme1()
 	peter.greet()
 	test(&peter)
+	peter.test2()
+	fmt.Println(peter.name)
 }
