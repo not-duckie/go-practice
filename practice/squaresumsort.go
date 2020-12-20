@@ -5,14 +5,14 @@ import (
 	"sort"
 )
 
-func sortedSquares(num []int) []int {
+func sortedSquares(num []float32) []float32 {
 	for i := range num {
 		num[i] *= num[i]
 	}
-	sort.Ints(num)
+	sort.Float32s(num)
 	return num
 }
 
 func main() {
-	fmt.Println(sortedSquares([]int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1}))
+	fmt.Println(sortedSquares([]float32{10, 9.8, 8, 7, 6, 5, 4, 3, 2, 1}))
 }
