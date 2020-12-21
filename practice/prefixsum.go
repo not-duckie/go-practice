@@ -12,7 +12,7 @@ func calculation(num int)([]int){
 	return sum
 }
 
-func sumtill(n int){
+func caching(n int){
 	sum := make([]int,9)
 	if sum[n]==0{
 		sum = calculation(n)
@@ -21,24 +21,24 @@ func sumtill(n int){
 }
 
 func main(){
-	sumtill(3)
-	sumtill(8)
-	sumtill(3)
-	sumtill(2)
-	sumtill(3)
-	sumtill(8)
-	sumtill(3)
-	sumtill(2)
-	sumtill(3)
-	sumtill(3)
-	sumtill(3)
-	sumtill(8)
-	sumtill(3)
-	sumtill(2)
-	sumtill(8)
-	sumtill(3)
-	sumtill(2)
-	sumtill(8)
-	sumtill(3)
-	sumtill(2)
+	caching(3)
+	caching(8)
+	caching(3)
+	caching(2)
+	caching(3)
+	caching(8)
+	caching(3)
+	caching(2)
+	caching(3)
+	caching(3)
+	caching(3)
+	caching(8)
+	caching(3)
+	caching(2)
+	caching(8)
+	caching(3)
+	caching(2)
+	caching(8)
+	caching(3)
+	caching(2)
 }
